@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="St. Lawrence Market icon">
+  <g shape-rendering="crispEdges">
+    <path fill="#ef476f" d="M12 26h40v28H12z"/>
+    <path fill="#2f3b52" d="M8 22h48v6H8z"/>
+    <path fill="#ffd166" d="M16 32h8v8h-8zm24 0h8v8h-8z"/>
+    <path fill="#f5f8fb" d="M28 34h8v20h-8z"/>
+    <path fill="#2f3b52" d="M26 14h12v8H26z"/>
+    <path fill="#49b377" d="M22 10h20v4H22z"/>
+    <path fill="#2f3b52" d="M10 54h44v4H10z"/>
+  </g>
+</svg>

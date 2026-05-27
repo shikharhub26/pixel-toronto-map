@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BMO Field icon">
+  <g shape-rendering="crispEdges">
+    <path fill="#2f3b52" d="M8 14h48v36H8z"/>
+    <path fill="#49b377" d="M12 18h40v28H12z"/>
+    <path fill="#ffffff" d="M30 18h4v28h-4z"/>
+    <path fill="#ffffff" d="M16 24h10v16H16z"/>
+    <path fill="#49b377" d="M20 28h6v8h-6z"/>
+    <path fill="#ffffff" d="M38 24h10v16H38z"/>
+    <path fill="#49b377" d="M38 28h6v8h-6z"/>
+    <path fill="#ffffff" d="M28 28h8v8h-8z"/>
+    <path fill="#49b377" d="M30 30h4v4h-4z"/>
+    <path fill="#ef476f" d="M12 50h40v5H12z"/>
+    <path fill="#ffd166" d="M6 22h4v8H6zm48 8h4v8h-4z"/>
+  </g>
+</svg>

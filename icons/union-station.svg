@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Union Station icon">
+  <g shape-rendering="crispEdges">
+    <path fill="#2f3b52" d="M12 18h40v6H12z"/>
+    <path fill="#f5f8fb" d="M16 24h32v28H16z"/>
+    <path fill="#d4dee9" d="M20 28h4v18h-4zm8 0h4v18h-4zm8 0h4v18h-4zm8 0h4v18h-4z"/>
+    <path fill="#2f3b52" d="M18 46h28v6H18z"/>
+    <path fill="#ffd166" d="M24 10h16v8H24z"/>
+    <path fill="#2f3b52" d="M20 14h24v4H20z"/>
+    <path fill="#ef476f" d="M30 6h4v4h-4z"/>
+    <path fill="#2f3b52" d="M10 52h44v6H10z"/>
+  </g>
+</svg>

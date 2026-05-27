@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Toronto City Hall icon">
+  <g shape-rendering="crispEdges">
+    <path fill="#d4dee9" d="M12 14h12v40H12z"/>
+    <path fill="#d4dee9" d="M40 14h12v40H40z"/>
+    <path fill="#2f3b52" d="M16 18h4v4h-4zm0 8h4v4h-4zm0 8h4v4h-4zm0 8h4v4h-4z"/>
+    <path fill="#2f3b52" d="M44 18h4v4h-4zm0 8h4v4h-4zm0 8h4v4h-4zm0 8h4v4h-4z"/>
+    <path fill="#8c78dd" d="M24 36h16v18H24z"/>
+    <path fill="#ffd166" d="M29 41h6v13h-6z"/>
+    <path fill="#2f3b52" d="M10 54h44v6H10z"/>
+  </g>
+</svg>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "harbourfront",
+    "name": "Harbourfront",
+    "group": "waterfront",
+    "role": "Primary waterfront fan zone corridor",
+    "summary": "The main waterfront band for public events, lakefront walking, official-style activations, and visitor-friendly gathering points south of Union.",
+    "later": "Venue/event pins, waterfront crowd status, family-friendly tags, ferry-terminal notes, and nearby watch-spot recommendations."
+  },
+  {
+    "id": "south-core-union",
+    "name": "Union",
+    "group": "waterfront",
+    "role": "Arrival hub",
+    "summary": "Union Station, Scotiabank Arena, PATH exits, and the easiest downtown landing area for visitors.",
+    "later": "Transit alerts, walk-time bands, late-night food, and first-stop recommendations."
+  },
+  {
+    "id": "liberty-fort-york",
+    "name": "Liberty",
+    "group": "west",
+    "role": "Stadium-side west edge",
+    "summary": "The western downtown block closest to Exhibition Place and BMO Field, useful for matchday movement.",
+    "later": "Stadium approach routes, patio clusters, pre-game flow, and post-game flow."
+  },
+  {
+    "id": "king-west",
+    "name": "King West",
+    "group": "west",
+    "role": "Nightlife and bar spine",
+    "summary": "Dense nightlife strip that will probably matter once watch-party venues get layered on.",
+    "later": "Sound-on venues, reservation status, 19+ tags, and line/capacity reports."
+  },
+  {
+    "id": "queen-west",
+    "name": "Queen West",
+    "group": "west",
+    "role": "Casual west-core corridor",
+    "summary": "Useful for lowkey watch spots, food, cafes, patios, and spillover from downtown crowds.",
+    "later": "Lowkey tags, cafe/pub split, outdoor seating, and crowd vibe."
+  },
+  {
+    "id": "ossington-little-portugal",
+    "name": "Ossington",
+    "group": "west",
+    "role": "Supporter culture candidate",
+    "summary": "A natural place to track country-specific crowds later, especially Portuguese and broader football communities.",
+    "later": "Fanbase tags, Portuguese crowd signals, and smaller venue discoveries."
+  },
+  {
+    "id": "kensington-chinatown",
+    "name": "Kensington",
+    "group": "core",
+    "role": "Dense food and late-day wandering block",
+    "summary": "A central, walkable zone that can become useful for food, casual screens, and pre/post-match wandering.",
+    "later": "Food-first venues, lowkey screens, late-night options, and pedestrian notes."
+  },
+  {
+    "id": "entertainment-district",
+    "name": "Entertainment",
+    "group": "core",
+    "role": "High-energy watch-party block",
+    "summary": "The most obvious central nightlife area, good for big screens, crowds, and event-style listings later.",
+    "later": "Big-screen venues, cover charges, sound-on status, and crowd reports."
+  },
+  {
+    "id": "financial-district",
+    "name": "Financial",
+    "group": "core",
+    "role": "Lunch-hour and after-work core",
+    "summary": "The weekday worker zone: useful for early matches, after-work crowds, and PATH-adjacent viewing.",
+    "later": "Office crowd timing, lunch specials, indoor routes, and quick-walk picks."
+  },
+  {
+    "id": "yonge-dundas",
+    "name": "Dundas",
+    "group": "core",
+    "role": "Central public square area",
+    "summary": "A high-traffic downtown node that matters for visitors, transit, and public-screen possibilities.",
+    "later": "Public screening notes, family-safe timing, and transit crowd alerts."
+  },
+  {
+    "id": "old-town-st-lawrence",
+    "name": "St. Lawrence",
+    "group": "east",
+    "role": "Food, market, and east-core pubs",
+    "summary": "A useful east-core pocket with St Lawrence Market, pubs, and walkable access from Union.",
+    "later": "Market-area food notes, east-core pubs, and walk-from-Union guidance."
+  },
+  {
+    "id": "distillery-corktown",
+    "name": "Distillery",
+    "group": "east",
+    "role": "Destination east-side cluster",
+    "summary": "A scenic eastern district where event-style screens and patio activations could be worth tracking.",
+    "later": "Outdoor screens, event listings, family-friendly tags, and streetcar notes."
+  },
+  {
+    "id": "cabbagetown-riverside",
+    "name": "Riverside",
+    "group": "east",
+    "role": "East expansion block",
+    "summary": "Keeps the map from becoming only the tourist core and gives us room for east-side community listings.",
+    "later": "Community venues, neighborhood watch parties, and lowkey finds."
+  },
+  {
+    "id": "yorkville-annex",
+    "name": "Yorkville",
+    "group": "north",
+    "role": "North-core restaurants and pubs",
+    "summary": "The upper downtown block with international restaurants, pubs, and transit access around Bloor.",
+    "later": "Restaurant screens, international crowd tags, and subway access."
+  },
+  {
+    "id": "church-wellesley",
+    "name": "The Village",
+    "group": "north",
+    "role": "Village and north-core nightlife",
+    "summary": "A distinct downtown nightlife zone that deserves its own block before venues get added.",
+    "later": "Pride-friendly venues, nightlife timing, and patio/event notes."
+  }
+]

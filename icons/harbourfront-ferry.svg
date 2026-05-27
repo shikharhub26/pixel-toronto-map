@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Harbourfront ferry icon">
+  <g shape-rendering="crispEdges">
+    <path fill="#74c7d9" d="M6 46h52v8H6z"/>
+    <path fill="#2e94ad" d="M10 54h10v4H10zm16 0h10v4H26zm16 0h10v4H42z"/>
+    <path fill="#f5f8fb" d="M14 28h36v14H14z"/>
+    <path fill="#2f3b52" d="M18 22h28v6H18z"/>
+    <path fill="#ef476f" d="M22 14h20v8H22z"/>
+    <path fill="#ffd166" d="M20 32h6v5h-6zm10 0h6v5h-6zm10 0h6v5h-6z"/>
+    <path fill="#2f3b52" d="M10 42h44l-6 8H16z"/>
+  </g>
+</svg>

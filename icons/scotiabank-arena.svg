@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Scotiabank Arena icon">
+  <g shape-rendering="crispEdges">
+    <path fill="#2f3b52" d="M12 24h40v8H12z"/>
+    <path fill="#d4dee9" d="M16 32h32v20H16z"/>
+    <path fill="#ef476f" d="M20 18h24v6H20z"/>
+    <path fill="#f5f8fb" d="M22 36h20v12H22z"/>
+    <path fill="#2f3b52" d="M26 39h4v6h-4zm8 0h4v6h-4z"/>
+    <path fill="#ffd166" d="M48 36h4v6h-4z"/>
+    <path fill="#ef476f" d="M48 44h4v6h-4z"/>
+    <path fill="#2f3b52" d="M10 52h44v6H10z"/>
+  </g>
+</svg>

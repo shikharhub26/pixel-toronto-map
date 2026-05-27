@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Rogers Centre icon">
+  <g shape-rendering="crispEdges">
+    <path fill="#2f3b52" d="M8 32h48v16H8z"/>
+    <path fill="#d4dee9" d="M12 24h40v8H12z"/>
+    <path fill="#74c7d9" d="M18 18h28v6H18z"/>
+    <path fill="#f5f8fb" d="M20 32h24v12H20z"/>
+    <path fill="#49b377" d="M24 36h16v6H24z"/>
+    <path fill="#ffffff" d="M30 36h4v6h-4z"/>
+    <path fill="#ef476f" d="M12 48h40v6H12z"/>
+    <path fill="#2f3b52" d="M6 54h52v5H6z"/>
+  </g>
+</svg>

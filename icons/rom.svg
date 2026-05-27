@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ROM icon">
+  <g shape-rendering="crispEdges">
+    <path fill="#2f3b52" d="M10 34h24v20H10z"/>
+    <path fill="#d4dee9" d="M14 38h5v12h-5zm8 0h5v12h-5z"/>
+    <path fill="#8c78dd" d="M32 12h10v10H22V12z"/>
+    <path fill="#74c7d9" d="M42 22h10v10H32V22z"/>
+    <path fill="#f5f8fb" d="M32 32h20v22H22V44h10z"/>
+    <path fill="#2f3b52" d="M32 12h4v42h-4z"/>
+    <path fill="#2f3b52" d="M42 22h4v32h-4z"/>
+    <path fill="#ef476f" d="M26 28h6v6h-6z"/>
+    <path fill="#2f3b52" d="M8 54h48v5H8z"/>
+  </g>
+</svg>

@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Toronto Map</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Open-source downtown pixel map</p>
+          <h1>Pixel Toronto Map</h1>
+        </div>
+      </header>
+
+      <section class="toolbar" aria-label="Subzone filters">
+        <button class="filter is-active" data-group="all" type="button">All Zones</button>
+        <button class="filter" data-group="waterfront" type="button">Waterfront</button>
+        <button class="filter" data-group="west" type="button">West Core</button>
+        <button class="filter" data-group="core" type="button">Central Core</button>
+        <button class="filter" data-group="east" type="button">East Core</button>
+        <button class="filter" data-group="north" type="button">North Core</button>
+      </section>
+
+      <section class="dashboard">
+        <section class="map-panel" aria-label="Downtown Toronto stylized subzone map">
+          <div class="map-frame">
+            <svg
+              id="downtown-map"
+              class="downtown-map"
+              viewBox="0 0 1200 760"
+              role="img"
+              aria-labelledby="map-title map-desc"
+            >
+              <title id="map-title">Stylized downtown Toronto pixel map</title>
+              <desc id="map-desc">
+                Pixel-inspired downtown Toronto map divided into clickable subzones.
+              </desc>
+
+              <defs>
+                <pattern id="pixel-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+                  <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#d8e4ec" stroke-width="1" />
+                </pattern>
+                <filter id="zone-shadow" x="-10%" y="-10%" width="120%" height="120%">
+                  <feDropShadow dx="0" dy="4" stdDeviation="0" flood-color="#10202a" flood-opacity="0.16" />
+                </filter>
+              </defs>
+
+              <rect width="1200" height="760" fill="#f5f8fb" />
+              <rect width="1200" height="760" fill="url(#pixel-grid)" opacity="0.55" />
+
+              <path
+                class="landmass"
+                d="M58 112 H1114 L1148 204 L1124 304 L1154 426 L1100 544 L968 606 L846 592 L720 624 L596 594 L472 622 L338 600 L202 622 L88 552 L50 426 L76 300 Z"
+              />
+              <path
+                class="lake"
+                d="M0 626 C98 594 172 615 262 642 C346 666 430 646 512 670 C616 700 690 713 812 676 C908 647 980 671 1066 650 C1125 636 1162 616 1200 622 V760 H0 Z"
+              />
+              <path
+                class="shoreline"
+                d="M52 610 C135 584 218 609 292 632 C370 656 438 638 520 658 C618 682 691 696 808 662 C908 633 984 657 1066 637 C1125 623 1160 605 1190 612"
+              />
+
+              <g id="district-layer" class="district-layer">
+                <g class="district" data-zone="ossington-little-portugal" tabindex="0" role="button" aria-label="Ossington">
+                  <path class="district-shape west-zone" d="M118 230 H340 V340 H150 L96 286 Z" />
+                  <text class="district-label" x="224" y="282">
+                    <tspan x="224">Ossington</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="queen-west" tabindex="0" role="button" aria-label="Queen West">
+                  <path class="district-shape west-zone" d="M150 340 H388 V438 H172 L126 388 Z" />
+                  <text class="district-label" x="250" y="382">
+                    <tspan x="250">Queen</tspan>
+                    <tspan x="250" dy="18">West</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="liberty-fort-york" tabindex="0" role="button" aria-label="Liberty">
+                  <path class="district-shape west-zone" d="M172 438 H372 L410 552 H162 L116 504 Z" />
+                  <text class="district-label" x="244" y="488">
+                    <tspan x="244">Liberty</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="king-west" tabindex="0" role="button" aria-label="King West">
+                  <path class="district-shape west-zone" d="M388 392 H548 V552 H410 L372 438 Z" />
+                  <text class="district-label" x="462" y="466">
+                    <tspan x="462">King</tspan>
+                    <tspan x="462" dy="18">West</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="kensington-chinatown" tabindex="0" role="button" aria-label="Kensington">
+                  <path class="district-shape core-zone" d="M388 260 H532 V392 H388 Z" />
+                  <text class="district-label" x="460" y="318">
+                    <tspan x="460">Kensington</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="yorkville-annex" tabindex="0" role="button" aria-label="Yorkville">
+                  <path class="district-shape north-zone" d="M420 132 H650 V222 H420 Z" />
+                  <text class="district-label" x="535" y="170">
+                    <tspan x="535">Yorkville</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="church-wellesley" tabindex="0" role="button" aria-label="The Village">
+                  <path class="district-shape north-zone" d="M650 164 H780 V324 H650 Z" />
+                  <text class="district-label" x="715" y="234">
+                    <tspan x="715">The</tspan>
+                    <tspan x="715" dy="18">Village</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="yonge-dundas" tabindex="0" role="button" aria-label="Dundas">
+                  <path class="district-shape core-zone" d="M532 260 H650 V392 H532 Z" />
+                  <text class="district-label" x="591" y="318">
+                    <tspan x="591">Dundas</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="entertainment-district" tabindex="0" role="button" aria-label="Entertainment">
+                  <path class="district-shape core-zone" d="M548 392 H684 V552 H548 Z" />
+                  <text class="district-label" x="616" y="466">
+                    <tspan x="616">Entertainment</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="financial-district" tabindex="0" role="button" aria-label="Financial">
+                  <path class="district-shape core-zone" d="M684 392 H804 V552 H684 Z" />
+                  <text class="district-label" x="744" y="466">
+                    <tspan x="744">Financial</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="south-core-union" tabindex="0" role="button" aria-label="Union">
+                  <path class="district-shape waterfront-zone" d="M548 552 H830 L800 606 H560 Z" />
+                  <text class="district-label" x="684" y="574">
+                    <tspan x="684">Union</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="harbourfront" tabindex="0" role="button" aria-label="Harbourfront">
+                  <path class="district-shape waterfront-zone harbourfront-shape" d="M350 606 H880 L840 676 H388 Z" />
+                  <text class="district-label harbourfront-label" x="616" y="646">
+                    <tspan x="616">Harbourfront</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="old-town-st-lawrence" tabindex="0" role="button" aria-label="St. Lawrence">
+                  <path class="district-shape east-zone" d="M804 392 H936 V552 H804 Z" />
+                  <text class="district-label" x="870" y="466">
+                    <tspan x="870">St.</tspan>
+                    <tspan x="870" dy="18">Lawrence</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="distillery-corktown" tabindex="0" role="button" aria-label="Distillery">
+                  <path class="district-shape east-zone" d="M936 444 H1086 V552 H936 Z" />
+                  <text class="district-label" x="1012" y="490">
+                    <tspan x="1012">Distillery</tspan>
+                  </text>
+                </g>
+
+                <g class="district" data-zone="cabbagetown-riverside" tabindex="0" role="button" aria-label="Riverside">
+                  <path class="district-shape east-zone" d="M936 282 H1086 V444 H936 Z" />
+                  <text class="district-label" x="1012" y="356">
+                    <tspan x="1012">Riverside</tspan>
+                  </text>
+                </g>
+              </g>
+
+              <g class="landmark-layer" aria-label="Toronto landmarks">
+                <g class="landmark-pin" tabindex="0" role="img" aria-label="BMO Field" transform="translate(82 514)">
+                  <image href="./icons/bmo-field.svg?v=2" width="44" height="44" />
+                </g>
+
+                <g class="landmark-pin" tabindex="0" role="img" aria-label="CN Tower" transform="translate(492 538)">
+                  <image href="./icons/cn-tower.svg" width="48" height="48" />
+                </g>
+
+                <g class="landmark-pin" tabindex="0" role="img" aria-label="Rogers Centre" transform="translate(448 496)">
+                  <image href="./icons/rogers-centre.svg?v=2" width="44" height="44" />
+                </g>
+
+                <g class="landmark-pin" tabindex="0" role="img" aria-label="Union Station" transform="translate(658 514)">
+                  <image href="./icons/union-station.svg?v=2" width="44" height="44" />
+                </g>
+
+                <g class="landmark-pin" tabindex="0" role="img" aria-label="Scotiabank Arena" transform="translate(724 548)">
+                  <image href="./icons/scotiabank-arena.svg?v=2" width="44" height="44" />
+                </g>
+
+                <g class="landmark-pin" tabindex="0" role="img" aria-label="Harbourfront ferry" transform="translate(825 620)">
+                  <image href="./icons/harbourfront-ferry.svg" width="44" height="44" />
+                </g>
+
+                <g class="landmark-pin" tabindex="0" role="img" aria-label="Toronto City Hall" transform="translate(688 324)">
+                  <image href="./icons/city-hall.svg" width="44" height="44" />
+                </g>
+
+                <g class="landmark-pin" tabindex="0" role="img" aria-label="Royal Ontario Museum" transform="translate(576 112)">
+                  <image href="./icons/rom.svg?v=2" width="44" height="44" />
+                </g>
+
+                <g class="landmark-pin" tabindex="0" role="img" aria-label="St. Lawrence Market" transform="translate(850 432)">
+                  <image href="./icons/st-lawrence-market.svg" width="44" height="44" />
+                </g>
+
+                <g class="landmark-pin" tabindex="0" role="img" aria-label="Distillery District" transform="translate(1015 500)">
+                  <image href="./icons/distillery.svg" width="44" height="44" />
+                </g>
+              </g>
+
+              <g class="map-labels" aria-hidden="true">
+                <text x="1020" y="688">Lake Ontario</text>
+              </g>
+            </svg>
+          </div>
+        </section>
+
+        <aside class="info-panel" aria-live="polite">
+          <div class="panel-heading">
+            <p class="kicker">Selected subzone</p>
+            <h2 id="zone-title">Downtown overview</h2>
+          </div>
+          <div id="zone-details" class="zone-details">
+            <p class="empty-state">
+              This version is about the map skeleton: downtown Toronto is divided into clickable
+              subzones first, with venues and match data arriving as later overlays.
+            </p>
+          </div>
+          <div class="legend" aria-label="Legend">
+            <span><b class="dot dot-waterfront"></b>Waterfront</span>
+            <span><b class="dot dot-west"></b>West core</span>
+            <span><b class="dot dot-core"></b>Central core</span>
+            <span><b class="dot dot-east"></b>East core</span>
+            <span><b class="dot dot-north"></b>North core</span>
+          </div>
+        </aside>
+      </section>
+
+      <section id="zone-spotlight" class="zone-spotlight is-hidden" aria-label="Selected subzone detail">
+        <div class="spotlight-heading">
+          <div>
+            <p class="kicker">Expanded subzone</p>
+            <h2 id="spotlight-title">Select a subzone</h2>
+          </div>
+          <button id="spotlight-close" class="secondary-button" type="button">Back to overview</button>
+        </div>
+        <div class="spotlight-grid">
+          <div id="spotlight-map" class="spotlight-map-wrap"></div>
+          <div id="spotlight-copy" class="spotlight-copy"></div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Pixel Toronto Map is an independent open-source project.</span>
+        <span>Not affiliated with FIFA, the City of Toronto, or listed venues.</span>
+      </footer>
+    </main>
+
+    <script src="./app.js?v=7"></script>
+  </body>
+</html>
